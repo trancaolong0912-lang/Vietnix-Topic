@@ -103,28 +103,28 @@ Quản lý:
      ↓
 Server xử lý và vận hành website
 ```
-# II.cPanel Features
+# II. cPanel Features
 
 # 1. Email
 
 Các tính năng quản lý email theo tên miền riêng.
 
-| Tính năng | Công dụng |
-|---|---|
-| Email Accounts | Tạo và quản lý email domain |
-| Forwarders | Chuyển tiếp email sang địa chỉ khác |
-| Email Routing | Cấu hình đường đi email |
-| Autoresponders | Tự động phản hồi email |
-| Default Address | Email mặc định nhận thư lỗi |
-| Mailing Lists | Tạo danh sách gửi mail hàng loạt |
-| Track Delivery | Kiểm tra trạng thái gửi email |
-| Email Filters | Lọc email |
-| Email Deliverability | Kiểm tra cấu hình gửi mail |
-| Address Importer | Import danh sách email |
-| Spam Filters | Chống spam email |
-| BoxTrapper | Chống spam nâng cao |
-| Email Disk Usage | Kiểm tra dung lượng email |
-| ASSP Antispam | Hệ thống chống spam |
+| Tính năng | Công dụng | Ví dụ thực tế |
+|---|---|---|
+| Email Accounts | Tạo và quản lý email domain | Tạo `support@company.com` |
+| Forwarders | Chuyển tiếp email sang địa chỉ khác | Email gửi tới `support@company.com` sẽ chuyển sang Gmail cá nhân |
+| Email Routing | Cấu hình đường đi email | Chuyển mail sang Google Workspace |
+| Autoresponders | Tự động phản hồi email | Tự động gửi: “Chúng tôi đã nhận được yêu cầu của bạn” |
+| Default Address | Email mặc định nhận thư lỗi | Nhận email gửi sai địa chỉ |
+| Mailing Lists | Tạo danh sách gửi mail hàng loạt | Gửi thông báo tới toàn bộ nhân viên |
+| Track Delivery | Kiểm tra trạng thái gửi email | Kiểm tra mail có bị lỗi hay không |
+| Email Filters | Lọc email | Tự động đưa mail spam vào thùng rác |
+| Email Deliverability | Kiểm tra cấu hình gửi mail | Kiểm tra SPF/DKIM |
+| Address Importer | Import danh sách email | Upload danh sách email nhân viên |
+| Spam Filters | Chống spam email | Chặn email quảng cáo rác |
+| BoxTrapper | Chống spam nâng cao | Yêu cầu người gửi xác minh |
+| Email Disk Usage | Kiểm tra dung lượng email | Kiểm tra mailbox nào chiếm nhiều dung lượng |
+| ASSP Antispam | Hệ thống chống spam | Phân tích và lọc mail độc hại |
 
 ---
 
@@ -132,17 +132,17 @@ Các tính năng quản lý email theo tên miền riêng.
 
 Các tính năng quản lý file và dữ liệu website.
 
-| Tính năng | Công dụng |
-|---|---|
-| File Manager | Quản lý file trực tiếp |
-| Images | Quản lý và tối ưu hình ảnh |
-| Directory Privacy | Đặt mật khẩu thư mục |
-| Disk Usage | Kiểm tra dung lượng |
-| Web Disk | Quản lý file như ổ đĩa mạng |
-| FTP Accounts | Quản lý tài khoản FTP |
-| Backup Wizard | Sao lưu dữ liệu |
-| Git Version Control | Quản lý source code Git |
-| JetBackup 5 | Backup nâng cao |
+| Tính năng | Công dụng | Ví dụ thực tế |
+|---|---|---|
+| File Manager | Quản lý file trực tiếp | Upload source code WordPress |
+| Images | Quản lý và tối ưu hình ảnh | Resize ảnh website |
+| Directory Privacy | Đặt mật khẩu thư mục | Khóa thư mục admin |
+| Disk Usage | Kiểm tra dung lượng | Xem thư mục nào chiếm nhiều GB |
+| Web Disk | Quản lý file như ổ đĩa mạng | Kết nối hosting như ổ cứng máy tính |
+| FTP Accounts | Quản lý tài khoản FTP | Cấp FTP cho developer |
+| Backup Wizard | Sao lưu dữ liệu | Backup website trước khi update |
+| Git Version Control | Quản lý source code Git | Deploy website từ GitHub |
+| JetBackup 5 | Backup nâng cao | Restore website chỉ với vài click |
 
 ---
 
@@ -150,12 +150,12 @@ Các tính năng quản lý file và dữ liệu website.
 
 Các công cụ quản lý cơ sở dữ liệu.
 
-| Tính năng | Công dụng |
-|---|---|
-| phpMyAdmin | Quản lý database trên web |
-| MySQL Databases | Tạo database MySQL |
-| MySQL Database Wizard | Tạo database tự động |
-| Remote MySQL | Cho phép kết nối DB từ xa |
+| Tính năng | Công dụng | Ví dụ thực tế |
+|---|---|---|
+| phpMyAdmin | Quản lý database trên web | Sửa dữ liệu user WordPress |
+| MySQL Databases | Tạo database MySQL | Tạo DB cho website mới |
+| MySQL Database Wizard | Tạo database tự động | Tự động tạo DB + user |
+| Remote MySQL | Cho phép kết nối DB từ xa | Kết nối database bằng Navicat |
 
 ---
 
@@ -163,15 +163,15 @@ Các công cụ quản lý cơ sở dữ liệu.
 
 Các tính năng quản lý domain và DNS.
 
-| Tính năng | Công dụng |
-|---|---|
-| WP Toolkit | Quản lý WordPress |
-| Site Publisher | Tạo website cơ bản nhanh |
-| Domain | Quản lý domain |
-| Redirects | Chuyển hướng domain |
-| Zone Editor | Quản lý DNS Record |
-| Dynamic DNS | DNS động |
-| IP Manager | Quản lý IP |
+| Tính năng | Công dụng | Ví dụ thực tế |
+|---|---|---|
+| WP Toolkit | Quản lý WordPress | Update plugin WordPress |
+| Site Publisher | Tạo website cơ bản nhanh | Tạo landing page đơn giản |
+| Domain | Quản lý domain | Add thêm domain vào hosting |
+| Redirects | Chuyển hướng domain | Chuyển `abc.com` sang `xyz.com` |
+| Zone Editor | Quản lý DNS Record | Thêm record TXT xác minh Google |
+| Dynamic DNS | DNS động | Camera IP dùng IP động |
+| IP Manager | Quản lý IP | Gán IP riêng cho website |
 
 ---
 
@@ -179,13 +179,13 @@ Các tính năng quản lý domain và DNS.
 
 Các công cụ theo dõi hiệu năng và traffic.
 
-| Tính năng | Công dụng |
-|---|---|
-| Visitors | Theo dõi lượt truy cập |
-| Errors | Kiểm tra lỗi website |
-| Bandwidth | Theo dõi băng thông |
-| Raw Access | Xem log truy cập |
-| Resource Usage | Kiểm tra CPU/RAM sử dụng |
+| Tính năng | Công dụng | Ví dụ thực tế |
+|---|---|---|
+| Visitors | Theo dõi lượt truy cập | Xem IP truy cập website |
+| Errors | Kiểm tra lỗi website | Xem lỗi `500 Internal Server Error` |
+| Bandwidth | Theo dõi băng thông | Kiểm tra traffic tháng |
+| Raw Access | Xem log truy cập | Phân tích request user |
+| Resource Usage | Kiểm tra CPU/RAM sử dụng | Phát hiện website quá tải |
 
 ---
 
@@ -193,16 +193,16 @@ Các công cụ theo dõi hiệu năng và traffic.
 
 Các tính năng bảo mật hosting và server.
 
-| Tính năng | Công dụng |
-|---|---|
-| SSH Access | Truy cập server bằng SSH |
-| IP Blocker | Chặn IP |
-| SSL/TLS | Quản lý SSL |
-| Manage API Tokens | Quản lý API Token |
-| Hotlink & Leech Protection | Chống hotlink và leech |
-| SSL/TLS Status | Kiểm tra trạng thái SSL |
-| Two-Factor Authentication | Xác thực 2 lớp |
-| Imunify360 | Hệ thống bảo mật nâng cao |
+| Tính năng | Công dụng | Ví dụ thực tế |
+|---|---|---|
+| SSH Access | Truy cập server bằng SSH | Dùng terminal quản trị Linux |
+| IP Blocker | Chặn IP | Block IP spam |
+| SSL/TLS | Quản lý SSL | Cài HTTPS cho website |
+| Manage API Tokens | Quản lý API Token | Kết nối ứng dụng ngoài |
+| Hotlink & Leech Protection | Chống hotlink và leech | Chặn website khác lấy ảnh |
+| SSL/TLS Status | Kiểm tra trạng thái SSL | Kiểm tra SSL hết hạn |
+| Two-Factor Authentication | Xác thực 2 lớp | Login bằng OTP |
+| Imunify360 | Hệ thống bảo mật nâng cao | Quét malware website |
 
 ---
 
@@ -210,13 +210,13 @@ Các tính năng bảo mật hosting và server.
 
 Các công cụ cài đặt và quản lý phần mềm.
 
-| Tính năng | Công dụng |
-|---|---|
-| WordPress Manager by Softaculous | Quản lý WordPress |
-| Setup Node.js App | Chạy ứng dụng Node.js |
-| MultiPHP Manager | Quản lý phiên bản PHP |
-| MultiPHP INI Editor | Chỉnh cấu hình PHP |
-| Select PHP Version | Chọn phiên bản PHP |
+| Tính năng | Công dụng | Ví dụ thực tế |
+|---|---|---|
+| WordPress Manager by Softaculous | Quản lý WordPress | Login admin WordPress nhanh |
+| Setup Node.js App | Chạy ứng dụng Node.js | Deploy API ExpressJS |
+| MultiPHP Manager | Quản lý phiên bản PHP | Website A dùng PHP 8.2 |
+| MultiPHP INI Editor | Chỉnh cấu hình PHP | Tăng `upload_max_filesize` |
+| Select PHP Version | Chọn phiên bản PHP | Chuyển PHP 7.4 → 8.2 |
 
 ---
 
@@ -224,16 +224,16 @@ Các công cụ cài đặt và quản lý phần mềm.
 
 Các tính năng nâng cao cho server và website.
 
-| Tính năng | Công dụng |
-|---|---|
-| LiteSpeed Web Cache Manager | Quản lý cache LiteSpeed |
-| Terminal | Dùng command line |
-| Cron Jobs | Tạo tác vụ tự động |
-| Indexes | Quản lý index thư mục |
-| Track DNS | Kiểm tra DNS |
-| Error Pages | Tùy chỉnh trang lỗi |
-| Apache Handlers | Quản lý Apache |
-| MIME Types | Quản lý định dạng file |
+| Tính năng | Công dụng | Ví dụ thực tế |
+|---|---|---|
+| LiteSpeed Web Cache Manager | Quản lý cache LiteSpeed | Tăng tốc WordPress |
+| Terminal | Dùng command line | Chạy lệnh Linux |
+| Cron Jobs | Tạo tác vụ tự động | Backup database mỗi ngày |
+| Indexes | Quản lý index thư mục | Chặn xem danh sách file |
+| Track DNS | Kiểm tra DNS | Kiểm tra domain đã trỏ đúng chưa |
+| Error Pages | Tùy chỉnh trang lỗi | Tạo trang `404 Not Found` riêng |
+| Apache Handlers | Quản lý Apache | Xử lý file PHP |
+| MIME Types | Quản lý định dạng file | Thêm MIME cho `.webp` |
 
 # III. WHM
 
