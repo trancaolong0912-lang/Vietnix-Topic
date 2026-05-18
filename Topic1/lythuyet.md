@@ -248,3 +248,271 @@ Sau đó:
 | Tự bảo trì phần cứng | Nhà cung cấp bảo trì |
 | Quyền kiểm soát cao hơn | Quản lý đơn giản hơn |
 | Chi phí đầu tư ban đầu lớn | Không cần mua server |
+# 2. các thành phần cấu thành
+# Các thành phần cấu thành của Server / Hosting
+
+# 2.1 OS (Hệ điều hành)
+
+OS (Operating System) là hệ điều hành dùng để quản lý và vận hành server.
+
+OS chịu trách nhiệm:
+- Quản lý tài nguyên phần cứng
+- Chạy ứng dụng
+- Quản lý file và tiến trình
+- Điều phối hoạt động hệ thống
+
+## Các hệ điều hành phổ biến
+
+| Hệ điều hành | Đặc điểm |
+|---|---|
+| Linux | Phổ biến trong hosting và server |
+| Windows Server | Hỗ trợ .NET và MSSQL |
+
+---
+
+# 2.2 CPU
+
+CPU (Central Processing Unit) là bộ xử lý trung tâm của server.
+
+CPU thực hiện:
+- Xử lý dữ liệu
+- Tính toán
+- Thực thi lệnh hệ thống
+
+## Thông số quan trọng
+- Core
+- Thread
+- Xung nhịp CPU
+- Cache
+
+CPU càng mạnh:
+- Khả năng xử lý càng nhanh
+- Chịu tải càng tốt
+
+---
+
+# 2.3 RAM
+
+RAM là bộ nhớ tạm thời dùng để lưu dữ liệu trong quá trình xử lý.
+
+RAM giúp:
+- Chạy ứng dụng
+- Tăng tốc xử lý dữ liệu
+- Hỗ trợ đa nhiệm
+
+## Đặc điểm
+- RAM càng lớn → xử lý càng ổn định
+- Thiếu RAM → hệ thống dễ chậm hoặc treo
+
+---
+
+# 2.4 DISK (Ổ cứng)
+
+DISK là nơi lưu trữ:
+- Hệ điều hành
+- Mã nguồn website
+- Database
+- File dữ liệu
+
+---
+
+## 2.5 SSD
+
+SSD là ổ cứng sử dụng chip nhớ điện tử thay cho đĩa quay cơ học.
+
+### Ưu điểm
+- Tốc độ nhanh
+- Hoạt động ổn định
+- Tiết kiệm điện
+
+---
+
+## 2.6 NVMe
+
+NVMe là công nghệ lưu trữ tốc độ cao hoạt động trên giao tiếp PCIe.
+
+### Ưu điểm
+- Tốc độ đọc/ghi cao hơn SSD SATA
+- Giảm độ trễ
+- Tăng hiệu năng hệ thống
+
+### Phù hợp với
+- Website lớn
+- Database
+- Hệ thống cần xử lý dữ liệu nhanh
+
+---
+
+# 2.7 IP Address
+
+IP Address là địa chỉ định danh của thiết bị trên mạng Internet hoặc mạng nội bộ.
+
+IP giúp:
+- Xác định server trên mạng
+- Kết nối giữa client và server
+- Truyền tải dữ liệu
+
+## Ví dụ
+
+```txt
+192.168.1.1
+8.8.8.8
+```
+
+---
+
+# 2.8 Network Port
+
+Network Port là cổng giao tiếp mạng dùng để trao đổi dữ liệu giữa các dịch vụ.
+
+Mỗi dịch vụ sẽ sử dụng một port riêng.
+
+## Một số port phổ biến
+
+| Port | Dịch vụ |
+|---|---|
+| 80 | HTTP |
+| 443 | HTTPS |
+| 22 | SSH |
+| 21 | FTP |
+| 3306 | MySQL |
+
+---
+
+# 2.9 Datacenter
+
+Datacenter là trung tâm dữ liệu dùng để đặt và vận hành server.
+
+Datacenter bao gồm:
+- Server
+- Thiết bị mạng
+- Hệ thống điện
+- Điều hòa
+- Firewall
+- Hệ thống bảo mật
+
+## Vai trò
+- Đảm bảo server hoạt động 24/7
+- Cung cấp kết nối Internet ổn định
+- Bảo vệ hệ thống và dữ liệu
+---
+
+# II. CÁC SẢN PHẨM NÂNG CAO
+# 1. SSL
+
+## Khái niệm
+
+SSL (Secure Sockets Layer) là chứng chỉ bảo mật dùng để mã hóa dữ liệu truyền tải giữa trình duyệt người dùng và server.
+
+Website sử dụng SSL sẽ có:
+
+```txt
+https://
+```
+
+thay vì:
+
+```txt
+http://
+```
+
+---
+
+## Công dụng
+
+- Mã hóa dữ liệu truyền tải
+- Bảo vệ thông tin người dùng
+- Tăng độ tin cậy cho website
+- Hỗ trợ SEO tốt hơn
+- Ngăn chặn đánh cắp dữ liệu
+
+---
+
+# 2. License
+
+## Khái niệm
+
+License là giấy phép sử dụng hợp pháp cho:
+- Phần mềm
+- Control Panel
+- Hệ điều hành
+- Công cụ quản trị server
+
+Ví dụ:
+- cPanel License
+- Windows Server License
+- CloudLinux License
+
+---
+
+## Công dụng
+
+- Kích hoạt đầy đủ tính năng phần mềm
+- Được hỗ trợ kỹ thuật từ nhà phát triển
+- Đảm bảo tính hợp pháp
+- Nhận cập nhật và vá lỗi bảo mật
+
+---
+
+# 3. WordPress Hosting
+
+## Khái niệm
+
+WordPress Hosting là dịch vụ hosting được tối ưu riêng cho mã nguồn WordPress.
+
+Hệ thống thường được cấu hình sẵn:
+- Cache
+- Bảo mật
+- Tối ưu hiệu năng WordPress
+
+---
+
+## Công dụng
+
+- Tăng tốc website WordPress
+- Cài đặt WordPress nhanh chóng
+- Giảm lỗi cấu hình
+- Tăng tính ổn định và bảo mật
+- Hỗ trợ quản trị dễ dàng
+
+---
+
+# 4. SEO Hosting
+
+## Khái niệm
+
+SEO Hosting là dịch vụ hosting hỗ trợ nhiều địa chỉ IP khác nhau trên cùng một hệ thống hosting.
+
+---
+
+## Công dụng
+
+- Xây dựng hệ thống website vệ tinh
+- Hạn chế trùng lặp IP
+- Hỗ trợ chiến lược SEO
+- Tăng tính phân tán hệ thống website
+
+---
+
+# 5. Firewall
+
+## Khái niệm
+
+Firewall là hệ thống tường lửa dùng để:
+- Kiểm soát lưu lượng mạng
+- Chặn truy cập trái phép
+- Bảo vệ server và website
+
+Firewall có thể là:
+- Phần mềm
+- Thiết bị phần cứng
+
+---
+
+## Công dụng
+
+- Chống tấn công mạng
+- Chặn IP độc hại
+- Bảo vệ dữ liệu server
+- Kiểm soát truy cập hệ thống
+- Giảm nguy cơ bị xâm nhập
