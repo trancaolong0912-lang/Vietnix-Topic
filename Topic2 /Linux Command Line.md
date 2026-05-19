@@ -43,4 +43,7 @@
 
 <img width="1633" height="137" alt="image" src="https://github.com/user-attachments/assets/0a8f59ac-da70-426b-a364-1ed062a20e30" />
 
+## Cat Command:
+
+<img width="1842" height="382" alt="image" src="https://github.com/user-attachments/assets/bd5f2bdd-14f0-4603-917b-1e16bf1c6f2c" />
 
