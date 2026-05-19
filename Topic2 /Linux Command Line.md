@@ -11,3 +11,9 @@
 ## SSH
 ## - ssh bằng password
 <img width="1322" height="753" alt="image" src="https://github.com/user-attachments/assets/41707247-f2c9-4a6c-9fdc-9748c92de330" />
+
+## - ssh bằng key
+
+<img width="1392" height="421" alt="image" src="https://github.com/user-attachments/assets/e98b474a-9575-4d26-b070-44e347551538" />
+
+<img width="1330" height="602" alt="image" src="https://github.com/user-attachments/assets/dcfbd07d-a846-4cfc-8888-533ced98165b" />
