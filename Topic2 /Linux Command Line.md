@@ -103,4 +103,33 @@ Dòng cuối cùng:
 11  14.225.253.240
 
 cho thấy packet đã tới được server Vietnix thành công. Tổng cộng packet đi qua khoảng 11 hop với độ trễ trung bình khoảng 80 ms, cho thấy kết nối mạng của bạn tới server hoạt động bình thường.
+##  Netstat Command:
+##     + Hiển thị các socket đang listen.
+
+<img width="939" height="902" alt="image" src="https://github.com/user-attachments/assets/12d4aaf7-3754-4f88-a128-fccf6f9a3066" />
+
+##     + Không resolve hostname.
+
+<img width="844" height="527" alt="image" src="https://github.com/user-attachments/assets/0de3b9d2-446c-4e3f-8260-a3136d85d5f5" />
+
+##     + Không resolve portname.
+
+<img width="893" height="663" alt="image" src="https://github.com/user-attachments/assets/861da0f3-34d1-4721-9097-6028cabc36fb" />
+
+##     + Display process name/PID.
+
+<img width="1078" height="584" alt="image" src="https://github.com/user-attachments/assets/c991eb01-9bb8-424d-858d-38c245cd0cb9" />
+
+##     + Chỉ hiển thị socket TCP.
+
+<img width="778" height="192" alt="image" src="https://github.com/user-attachments/assets/58fe7de6-a7c1-49a3-b399-05bee76a3e3f" />
+
+##     + Chỉ hiển thị socket UDP.
+
+<img width="775" height="196" alt="image" src="https://github.com/user-attachments/assets/ed2e4a3c-4c30-4557-a075-f24a550b33fa" />
+
+
+##   - Sort Command:
+
+<img width="802" height="550" alt="image" src="https://github.com/user-attachments/assets/8ab7668f-0e7a-4f7d-a63b-e38f4bbd576a" />
 
