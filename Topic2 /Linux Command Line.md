@@ -7,3 +7,7 @@
 ## HPING3
 
 <img width="1335" height="504" alt="image" src="https://github.com/user-attachments/assets/23b1b543-4220-4f4f-96ae-d20ee4d32907" />
+
+## SSH
+## - ssh bằng password
+<img width="1322" height="753" alt="image" src="https://github.com/user-attachments/assets/41707247-f2c9-4a6c-9fdc-9748c92de330" />
