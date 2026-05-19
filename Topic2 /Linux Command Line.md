@@ -133,3 +133,13 @@ cho thấy packet đã tới được server Vietnix thành công. Tổng cộng
 
 <img width="802" height="550" alt="image" src="https://github.com/user-attachments/assets/8ab7668f-0e7a-4f7d-a63b-e38f4bbd576a" />
 
+##   - Uniq Command:
+
+<img width="804" height="329" alt="image" src="https://github.com/user-attachments/assets/3114c52b-2f27-45eb-b914-ef3af0a3e536" />
+
+
+##   - Wc Command:
+
+<img width="1288" height="248" alt="image" src="https://github.com/user-attachments/assets/d18431d2-f95d-4135-a546-4b45fbe50791" />
+
+
