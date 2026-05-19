@@ -47,3 +47,9 @@
 
 <img width="1842" height="382" alt="image" src="https://github.com/user-attachments/assets/bd5f2bdd-14f0-4603-917b-1e16bf1c6f2c" />
 
+## Echo Command:
+
+<img width="1174" height="140" alt="image" src="https://github.com/user-attachments/assets/099e1bb7-0443-4f82-8ee4-53da50f9729c" />
+
+
+
