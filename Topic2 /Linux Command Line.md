@@ -32,3 +32,15 @@
 ## - copy 1 folder 
 
 <img width="1090" height="92" alt="image" src="https://github.com/user-attachments/assets/ba7edca1-ab52-4f2b-83d6-d19b169a58c1" />
+
+##  Rsync Command:
+## -1 file
+<img width="1492" height="174" alt="image" src="https://github.com/user-attachments/assets/8df886e7-58da-477c-aaeb-fd3dd4097235" />
+
+## -1 folder
+<img width="1500" height="263" alt="image" src="https://github.com/user-attachments/assets/f20e08d2-a6a2-4086-b6c6-4c4a2adfd1ac" />
+## -rsync incremental'
+
+<img width="1633" height="137" alt="image" src="https://github.com/user-attachments/assets/0a8f59ac-da70-426b-a364-1ed062a20e30" />
+
+
