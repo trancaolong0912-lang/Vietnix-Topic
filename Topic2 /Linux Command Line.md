@@ -142,4 +142,6 @@ cho thấy packet đã tới được server Vietnix thành công. Tổng cộng
 
 <img width="1288" height="248" alt="image" src="https://github.com/user-attachments/assets/d18431d2-f95d-4135-a546-4b45fbe50791" />
 
+##   - Chmod, Chown, Chattr Command:
 
+<img width="830" height="182" alt="image" src="https://github.com/user-attachments/assets/217791ad-a6e0-4757-9f83-9e5b3a36e353" />
