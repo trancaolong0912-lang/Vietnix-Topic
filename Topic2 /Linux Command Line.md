@@ -79,4 +79,28 @@
 
 <img width="1204" height="161" alt="image" src="https://github.com/user-attachments/assets/efaf1074-a28c-4fab-8a08-afe36f9f0acd" />
 
+## Traceroute/Tracert Command:
+
+
+<img width="1138" height="220" alt="image" src="https://github.com/user-attachments/assets/f08ac9e2-b823-4e5c-9c24-3987c8d54637" />
+Lệnh `traceroute vietnix.vn` được dùng để kiểm tra đường đi của các packet từ máy tính của bạn tới server `vietnix.vn`. Kết quả hiển thị cho thấy packet đã đi qua nhiều router trung gian trước khi tới đích cuối cùng là `14.225.253.240`.
+
+Trong kết quả, mỗi dòng đại diện cho một `hop` — tức là một router hoặc thiết bị mạng mà packet phải đi qua. Con số ở đầu dòng (`1`, `2`, `3`...) là thứ tự của hop.
+
+Các địa chỉ như `192.168.0.1`, `10.x.x.x` hay `27.x.x.x` là IP của các router trung gian. Trong đó:
+
+- `192.168.x.x` là router nội bộ trong mạng LAN/WiFi của bạn.
+- `10.x.x.x` là IP private trong hệ thống mạng của ISP.
+- `static.vnpt.vn` là các router thuộc hạ tầng mạng của VNPT.
+
+Các giá trị `ms` là thời gian phản hồi (latency), tính bằng milliseconds. Đây là thời gian packet đi tới router và phản hồi trở lại. Giá trị càng thấp thì kết nối càng nhanh và ổn định.
+
+Dấu `* * *` xuất hiện ở một số hop có nghĩa là router hoặc firewall tại đó không phản hồi packet traceroute. Điều này khá phổ biến và không nhất thiết là lỗi mạng.
+
+Dòng cuối cùng:
+
+
+11  14.225.253.240
+
+cho thấy packet đã tới được server Vietnix thành công. Tổng cộng packet đi qua khoảng 11 hop với độ trễ trung bình khoảng 80 ms, cho thấy kết nối mạng của bạn tới server hoạt động bình thường.
 
