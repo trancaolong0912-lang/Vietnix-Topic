@@ -51,5 +51,29 @@
 
 <img width="1174" height="140" alt="image" src="https://github.com/user-attachments/assets/099e1bb7-0443-4f82-8ee4-53da50f9729c" />
 
+# Tail/Head Command
+
+## Sự khác biệt giữa `tail` và `head`
+
+| Lệnh | Chức năng | Ví dụ |
+|---|---|---|
+| `head` | Xem các dòng đầu tiên của file | `head notes.txt` |
+| `tail` | Xem các dòng cuối cùng của file | `tail notes.txt` |
+
+---
+# Sự khác biệt giữa `tail` và `tailf`
+
+| Tiêu chí | `tail` | `tailf` |
+|---|---|---|
+| Chức năng | Xem các dòng cuối của file | Theo dõi file realtime |
+| Hoạt động | Hiển thị xong rồi thoát | Chạy liên tục để cập nhật nội dung mới |
+| Realtime | ❌ Không | ✅ Có |
+| Thường dùng cho | Xem nhanh log/file | Theo dõi log server |
+| Ví dụ | `tail server.log` | `tailf server.log` |
+| Phiên bản hiện đại | `tail` | Thường được thay bằng `tail -f` |
+
+---
+
+
 
 
