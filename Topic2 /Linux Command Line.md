@@ -145,3 +145,92 @@ cho thấy packet đã tới được server Vietnix thành công. Tổng cộng
 ##   - Chmod, Chown, Chattr Command:
 
 <img width="830" height="182" alt="image" src="https://github.com/user-attachments/assets/217791ad-a6e0-4757-9f83-9e5b3a36e353" />
+
+## - Df Command:
+
+<img width="727" height="266" alt="image" src="https://github.com/user-attachments/assets/d7a037c9-cfc9-4332-8cef-0a1e788b8a95" />
+
+## 2. Phân vùng `/` là gì?
+
+Phân vùng `/` gọi là:
+
+```text
+Root Filesystem
+```
+
+Đây là phân vùng chính của Linux.
+
+Mọi thứ trong hệ thống đều nằm bên dưới `/`.
+
+Ví dụ:
+
+| Thư mục | Chức năng |
+|---|---|
+| `/home` | User data |
+| `/etc` | File cấu hình |
+| `/var` | Log, cache |
+| `/usr` | Application |
+| `/boot` | Kernel boot |
+| `/tmp` | File tạm |
+
+Ví dụ:
+
+```text
+/
+├── home
+├── etc
+├── var
+├── usr
+└── boot
+```
+
+Nếu phân vùng `/` đầy:
+
+- hệ thống có thể chậm
+- không ghi được log
+- service lỗi
+- server crash
+
+# Free Command
+
+Lệnh `free` dùng để kiểm tra dung lượng RAM và Swap trên Linux.
+
+---
+
+## Xem thông tin RAM
+
+Lệnh:
+
+```bash
+free -h
+```
+
+Kết quả ví dụ:
+
+```text
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       4.2Gi       6.8Gi       512Mi       4.0Gi        10Gi
+Swap:           2.0Gi          0B       2.0Gi
+```
+
+---
+
+# Giải thích các thông số RAM
+
+| Cột | Ý nghĩa |
+|---|---|
+| total | Tổng dung lượng RAM |
+| used | RAM đang sử dụng |
+| free | RAM trống hoàn toàn |
+| shared | RAM dùng chung giữa process |
+| buff/cache | RAM dùng làm cache/buffer |
+| available | RAM còn có thể sử dụng thực tế |
+
+
+## TOP COMMAND
+
+<img width="1113" height="982" alt="image" src="https://github.com/user-attachments/assets/48814fea-067b-4647-b687-0584aed0c37f" />
+
+
+
+
