@@ -184,14 +184,28 @@ CÀI CHO laravel.caolong.vietnix.tech
 
 <img width="425" height="73" alt="image" src="https://github.com/user-attachments/assets/3dc307ae-6095-44c1-9dbe-84e61fe7e4ac" />
 
-- tạo user remote 
-
-<img width="822" height="340" alt="image" src="https://github.com/user-attachments/assets/3dc02837-4a3b-4406-9776-51253a3be53b" />
-
 -cấu hình firewall bảo mật
 
 <img width="693" height="42" alt="image" src="https://github.com/user-attachments/assets/7b9e9792-bbc2-4ebd-b8b5-a6f493a85e83" />
 
--dùng thiết bị khác để kết nối vào user remote_user
+-dùng thiết bị khác để kết nối vào root
 
-<img width="917" height="329" alt="image" src="https://github.com/user-attachments/assets/fe684893-afaa-47b3-9683-957627fe039c" />
+<img width="1141" height="283" alt="image" src="https://github.com/user-attachments/assets/b6b1d210-0eba-4d86-a43e-7d6b88c873c5" />
+
+## 5.Tạo tài khoản FTP (vsftpd)
+-cài đặt vsftpd
+
+<img width="962" height="708" alt="image" src="https://github.com/user-attachments/assets/55ed9504-4124-4052-bd94-8d80b523c7c3" />
+
+-cấu hình vsftpd.conf
+
+<img width="461" height="529" alt="image" src="https://github.com/user-attachments/assets/5c24f944-3a9f-415d-b8da-8533af5827a0" />
+
+<img width="560" height="239" alt="image" src="https://github.com/user-attachments/assets/96ba32db-cfb5-4873-b8ae-9a5ab2e5b846" />
+
+
+<img width="1261" height="630" alt="image" src="https://github.com/user-attachments/assets/15c09097-5088-4227-b7a8-c4a2b6d2964b" />
+
+- kết nối qua filezilla
+
+  <img width="1208" height="902" alt="image" src="https://github.com/user-attachments/assets/eadcb355-572b-449c-903b-c5d26362bb9c" />
