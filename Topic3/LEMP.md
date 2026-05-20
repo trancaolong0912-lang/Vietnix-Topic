@@ -1,4 +1,4 @@
-<img width="809" height="390" alt="image" src="https://github.com/user-attachments/assets/42526581-c58e-4b35-b7da-9227a5e0e702" /># XÂY DỰNG MÔ HÌNH LEMP
+# XÂY DỰNG MÔ HÌNH LEMP
 * mô hình LEMP gồm linux,nginx, mysql, PHP
 
 ## 1 CÀI ĐẶT NGINX
