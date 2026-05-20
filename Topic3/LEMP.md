@@ -148,4 +148,22 @@
 
 <img width="1302" height="367" alt="image" src="https://github.com/user-attachments/assets/31cc8789-05f2-49fe-81cd-755266df644a" />
 
+-kích hoạt site để nginx truy câp
+
+<img width="1213" height="68" alt="image" src="https://github.com/user-attachments/assets/0debbcbc-4368-41f2-a2c3-f2236d565a6f" />
+
+-wordpress interface
+
+<img width="1271" height="999" alt="image" src="https://github.com/user-attachments/assets/a9d93c78-1791-4f74-9b2c-19f4dadce170" />
+
+-Lavarel interface
+
+<img width="1529" height="896" alt="image" src="https://github.com/user-attachments/assets/9e165160-3109-48c6-a5ae-334514fd6fa5" />
+
+## 3. CÀI SSL
+
+-Cài certbot
+
+<img width="993" height="531" alt="image" src="https://github.com/user-attachments/assets/2ac6283d-9631-4c2f-bdac-3f28973e5791" />
+
 
