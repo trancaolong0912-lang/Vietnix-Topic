@@ -35,6 +35,23 @@
 
 <img width="941" height="291" alt="image" src="https://github.com/user-attachments/assets/2054da96-a9b7-4662-aa26-fe04119b2dc9" />
 
+## Cấu hình Nginx để sử dụng bộ xử lý PHP
+
+-tạo thư mục root web cho domain
+
+<img width="413" height="23" alt="image" src="https://github.com/user-attachments/assets/c65e0b58-969b-43d3-9bdb-845b566bd9b9" />
+
+-Gán quyền sở hữu thư mục bằng cách sử dụng biến môi trường $USER, biến này sẽ tham chiếu đến người dùng hệ thống hiện tại:
+
+<img width="660" height="20" alt="image" src="https://github.com/user-attachments/assets/eec38468-23ed-41fe-855e-3c8c32327954" />
+
+-Mở một tệp cấu hình mới trong thư mục sites-available của Nginx bằng trình soạn thảo dòng 
+
+<img width="590" height="402" alt="image" src="https://github.com/user-attachments/assets/86f1e90f-15f0-4a4e-8bb3-e6b6919a5323" />
+
+<img width="814" height="414" alt="image" src="https://github.com/user-attachments/assets/ebddb38b-3b29-4945-9e0d-674296514688" />
+
+
 ## cài php-admin
 
 <img width="877" height="419" alt="image" src="https://github.com/user-attachments/assets/54232e67-cf9c-47d9-8d68-771b8580d4ec" />
