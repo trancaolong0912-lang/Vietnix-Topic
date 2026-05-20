@@ -164,6 +164,34 @@
 
 -Cài certbot
 
+CÀI CHO wp.caolong.vietnix.tech
 <img width="993" height="531" alt="image" src="https://github.com/user-attachments/assets/2ac6283d-9631-4c2f-bdac-3f28973e5791" />
 
+<img width="948" height="751" alt="image" src="https://github.com/user-attachments/assets/95154b35-a282-4d6b-b829-4dc43635bb64" />
 
+<img width="366" height="277" alt="image" src="https://github.com/user-attachments/assets/44feedc9-eb87-4085-9114-a5f6c7e78976" />
+
+
+CÀI CHO laravel.caolong.vietnix.tech
+
+<img width="1123" height="407" alt="image" src="https://github.com/user-attachments/assets/1c7d2433-296a-4bec-8455-4610faa58d9a" />
+
+<img width="511" height="296" alt="image" src="https://github.com/user-attachments/assets/694fb0c1-0ae7-4fd8-b74d-9b2ae3355def" />
+
+## 4. thiết lập remote cho mysql
+
+-cấu hình cho mysql 
+
+<img width="425" height="73" alt="image" src="https://github.com/user-attachments/assets/3dc307ae-6095-44c1-9dbe-84e61fe7e4ac" />
+
+- tạo user remote 
+
+<img width="822" height="340" alt="image" src="https://github.com/user-attachments/assets/3dc02837-4a3b-4406-9776-51253a3be53b" />
+
+-cấu hình firewall bảo mật
+
+<img width="693" height="42" alt="image" src="https://github.com/user-attachments/assets/7b9e9792-bbc2-4ebd-b8b5-a6f493a85e83" />
+
+-dùng thiết bị khác để kết nối vào user remote_user
+
+<img width="917" height="329" alt="image" src="https://github.com/user-attachments/assets/fe684893-afaa-47b3-9683-957627fe039c" />
