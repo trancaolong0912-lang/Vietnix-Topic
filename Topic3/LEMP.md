@@ -1,4 +1,4 @@
-<img width="658" height="296" alt="image" src="https://github.com/user-attachments/assets/0bbcf76d-c987-4fbf-9a95-8d5e4f869044" /># XÂY DỰNG MÔ HÌNH LEMP
+# XÂY DỰNG MÔ HÌNH LEMP
 * mô hình LEMP gồm linux,nginx, mysql, PHP
 
 ## 1 CÀI ĐẶT NGINX
@@ -59,42 +59,44 @@
 
 <img width="772" height="14" alt="image" src="https://github.com/user-attachments/assets/8bccb6ec-1de1-43f5-9d39-393b317942d5" />
 
-- check domain
+-check domain
 
 <img width="658" height="296" alt="image" src="https://github.com/user-attachments/assets/9752495d-8cbf-4e71-a718-8b03c783f8e5" />
 
-- kiểm tra PHP với nginx
+-kiểm tra PHP với nginx
 
 <img width="1067" height="128" alt="image" src="https://github.com/user-attachments/assets/d313aae2-31bc-4ffd-9a2d-2cdc37d8e98f" />
 <img width="1627" height="1016" alt="image" src="https://github.com/user-attachments/assets/b92919cc-14b0-4d5b-9b5f-8336188cf649" />
 
-- kiểm tra mysql kết nối tới php
+-kiểm tra mysql kết nối tới php
 
   <img width="1066" height="242" alt="image" src="https://github.com/user-attachments/assets/7c480c76-e79c-4ee6-8b89-27f1f6f4574e" />
 
-- truy cập thử với account longtc
+  -truy cập thử với account longtc
 
   <img width="748" height="270" alt="image" src="https://github.com/user-attachments/assets/b907835c-3791-49a6-a6c9-cc0e37d7e1f5" />
   
-- check truy cập vào database
+  -check truy cập vào database
 
   <img width="340" height="320" alt="image" src="https://github.com/user-attachments/assets/867ed382-7d66-4754-9e39-7df58555f483" />
-- tạo bảng
+  -tạo bảng
 
   <img width="946" height="79" alt="image" src="https://github.com/user-attachments/assets/36791cd0-93f3-4c80-9a50-814fddfc48fd" />
 
-- thêm nội dung
+-thêm nội dung
   
 <img width="818" height="68" alt="image" src="https://github.com/user-attachments/assets/3bcfb8cd-1f85-41cd-ab97-6d21f2f2b207" />
 
 <img width="436" height="251" alt="image" src="https://github.com/user-attachments/assets/c8abe9a8-c38a-4129-9955-78af44f58b1e" />
 
--
+-viết chươn trình PHP lấy dử liệu trên database Mysql
 <img width="936" height="478" alt="image" src="https://github.com/user-attachments/assets/97549929-3cb6-4555-8e53-cd5639ec4aa4" />
+
+<img width="679" height="300" alt="image" src="https://github.com/user-attachments/assets/343b3669-2171-47be-a39f-1e2eedecc569" />
 
   
 
-## cài php-admin
+## 1.5 cài php-admin
 
 <img width="877" height="419" alt="image" src="https://github.com/user-attachments/assets/54232e67-cf9c-47d9-8d68-771b8580d4ec" />
 
@@ -108,4 +110,30 @@
 <img width="1276" height="426" alt="image" src="https://github.com/user-attachments/assets/fd64fa20-e594-4ffd-ab93-8139e5d8a558" />
 
 <img width="1851" height="894" alt="image" src="https://github.com/user-attachments/assets/363aca94-9786-4fe0-a0ac-df36e04790de" />
+## 2. cài wordpress và lavarel
 
+-tạo thư mục cho domain wordpress và lavarel
+
+<img width="649" height="46" alt="image" src="https://github.com/user-attachments/assets/c168ad03-17ec-44b9-9b84-053f030207ca" />
+
+-gán quyền cho webserver sử dung thư mục
+
+<img width="585" height="60" alt="image" src="https://github.com/user-attachments/assets/730c33f5-1838-42c0-a10a-41aa2bde9fdf" />
+
+-tạo database, user cho wordpress và lavarel
+
+<img width="782" height="437" alt="image" src="https://github.com/user-attachments/assets/a7040867-5178-4a00-9f62-c8d7b1bf5cab" />
+
+- 2.1 cài wordpress
+
+<img width="1720" height="111" alt="image" src="https://github.com/user-attachments/assets/4ec6ff4b-8e75-4db8-9a45-1b422b47e980" />
+
+-chỉnh config 
+
+<img width="1067" height="661" alt="image" src="https://github.com/user-attachments/assets/2981e38b-2989-4b9b-b39e-d90862486d34" />
+
+- 2.2 cài lavarel
+  
+<img width="1420" height="263" alt="image" src="https://github.com/user-attachments/assets/990c330b-98be-4365-9e06-ea7c12d89f13" />
+
+<img width="973" height="352" alt="image" src="https://github.com/user-attachments/assets/20a7ecde-1ae2-40df-9eb6-e3eec826ddc2" />
