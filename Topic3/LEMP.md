@@ -1,4 +1,4 @@
-# XÂY DỰNG MÔ HÌNH LEMP
+<img width="658" height="296" alt="image" src="https://github.com/user-attachments/assets/0bbcf76d-c987-4fbf-9a95-8d5e4f869044" /># XÂY DỰNG MÔ HÌNH LEMP
 * mô hình LEMP gồm linux,nginx, mysql, PHP
 
 ## 1 CÀI ĐẶT NGINX
@@ -51,6 +51,48 @@
 
 <img width="814" height="414" alt="image" src="https://github.com/user-attachments/assets/ebddb38b-3b29-4945-9e0d-674296514688" />
 
+-Kích hoạt cấu hình bằng cách liên kết đến tệp cấu hình từ thư mục sites-enabled của Nginx:
+
+<img width="974" height="17" alt="image" src="https://github.com/user-attachments/assets/e27fccfa-22ea-47f0-a37a-d83e960c2d3e" />
+
+-Tiếp theo, hãy gỡ bỏ liên kết đến tệp cấu hình mặc định khỏi thư mục /sites-enabled/
+
+<img width="772" height="14" alt="image" src="https://github.com/user-attachments/assets/8bccb6ec-1de1-43f5-9d39-393b317942d5" />
+
+- check domain
+
+<img width="658" height="296" alt="image" src="https://github.com/user-attachments/assets/9752495d-8cbf-4e71-a718-8b03c783f8e5" />
+
+- kiểm tra PHP với nginx
+
+<img width="1067" height="128" alt="image" src="https://github.com/user-attachments/assets/d313aae2-31bc-4ffd-9a2d-2cdc37d8e98f" />
+<img width="1627" height="1016" alt="image" src="https://github.com/user-attachments/assets/b92919cc-14b0-4d5b-9b5f-8336188cf649" />
+
+- kiểm tra mysql kết nối tới php
+
+  <img width="1066" height="242" alt="image" src="https://github.com/user-attachments/assets/7c480c76-e79c-4ee6-8b89-27f1f6f4574e" />
+
+- truy cập thử với account longtc
+
+  <img width="748" height="270" alt="image" src="https://github.com/user-attachments/assets/b907835c-3791-49a6-a6c9-cc0e37d7e1f5" />
+  
+- check truy cập vào database
+
+  <img width="340" height="320" alt="image" src="https://github.com/user-attachments/assets/867ed382-7d66-4754-9e39-7df58555f483" />
+- tạo bảng
+
+  <img width="946" height="79" alt="image" src="https://github.com/user-attachments/assets/36791cd0-93f3-4c80-9a50-814fddfc48fd" />
+
+- thêm nội dung
+  
+<img width="818" height="68" alt="image" src="https://github.com/user-attachments/assets/3bcfb8cd-1f85-41cd-ab97-6d21f2f2b207" />
+
+<img width="436" height="251" alt="image" src="https://github.com/user-attachments/assets/c8abe9a8-c38a-4129-9955-78af44f58b1e" />
+
+-
+<img width="936" height="478" alt="image" src="https://github.com/user-attachments/assets/97549929-3cb6-4555-8e53-cd5639ec4aa4" />
+
+  
 
 ## cài php-admin
 
