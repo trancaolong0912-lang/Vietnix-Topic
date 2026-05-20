@@ -1,4 +1,4 @@
-# XÂY DỰNG MÔ HÌNH LEMP
+<img width="809" height="390" alt="image" src="https://github.com/user-attachments/assets/42526581-c58e-4b35-b7da-9227a5e0e702" /># XÂY DỰNG MÔ HÌNH LEMP
 * mô hình LEMP gồm linux,nginx, mysql, PHP
 
 ## 1 CÀI ĐẶT NGINX
@@ -137,3 +137,15 @@
 <img width="1420" height="263" alt="image" src="https://github.com/user-attachments/assets/990c330b-98be-4365-9e06-ea7c12d89f13" />
 
 <img width="973" height="352" alt="image" src="https://github.com/user-attachments/assets/20a7ecde-1ae2-40df-9eb6-e3eec826ddc2" />
+
+## cấu hình Nginx cho 2 domain
+
+-wordpress
+
+<img width="1262" height="444" alt="image" src="https://github.com/user-attachments/assets/1d149f7d-c35e-4d7a-81b3-35d95ec98ac9" />
+
+-lavarel
+
+<img width="1302" height="367" alt="image" src="https://github.com/user-attachments/assets/31cc8789-05f2-49fe-81cd-755266df644a" />
+
+
