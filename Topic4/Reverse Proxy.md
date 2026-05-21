@@ -29,11 +29,11 @@
 
 - vhost cho wordpress
   
-<img width="1330" height="662" alt="image" src="https://github.com/user-attachments/assets/58ad2d0d-0a3f-43fa-9166-f4359f686f5a" />
+<img width="1422" height="456" alt="image" src="https://github.com/user-attachments/assets/2d7a5130-f694-40e6-9a8e-9594c08a7854" />
 
  - vhost cho lavarel
    
-<img width="1117" height="484" alt="image" src="https://github.com/user-attachments/assets/94793a11-914c-49da-a74a-773dcc7e81e3" />
+<img width="1472" height="608" alt="image" src="https://github.com/user-attachments/assets/932df1e0-88d9-44b5-a103-1de4a7c258de" />
 
 - check port
 
@@ -44,11 +44,11 @@
 <img width="1094" height="737" alt="image" src="https://github.com/user-attachments/assets/8f427127-c828-46a8-895a-c51775a18cda" />
   - tạo vhost cho lavarel nginx
 
-<img width="1444" height="454" alt="image" src="https://github.com/user-attachments/assets/b496dd71-4943-4620-beac-691429302aaa" />
+<img width="1235" height="752" alt="image" src="https://github.com/user-attachments/assets/6b4876ea-2ed1-4aa5-8c44-ebb898725b9e" />
 
   - tạo vhost wordpress nginx
 
-<img width="781" height="590" alt="image" src="https://github.com/user-attachments/assets/234da547-2eb3-495a-8ef2-ff5e7d3e5cac" />
+  <img width="1336" height="870" alt="image" src="https://github.com/user-attachments/assets/c7e22be4-ee50-4d9f-8882-388323d221fe" />
 
   ## cấu hình ssl
   
