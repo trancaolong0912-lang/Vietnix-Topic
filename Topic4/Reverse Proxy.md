@@ -44,11 +44,12 @@
 <img width="1094" height="737" alt="image" src="https://github.com/user-attachments/assets/8f427127-c828-46a8-895a-c51775a18cda" />
   - tạo vhost cho lavarel nginx
 
-<img width="1346" height="698" alt="image" src="https://github.com/user-attachments/assets/01b0c479-77a2-4b7a-a5f8-a96c9779b96f" />
+<img width="1444" height="454" alt="image" src="https://github.com/user-attachments/assets/b496dd71-4943-4620-beac-691429302aaa" />
 
   - tạo vhost wordpress nginx
 
-<img width="1041" height="791" alt="image" src="https://github.com/user-attachments/assets/28fe8f64-ba71-4272-aa90-f263adda2262" />
+<img width="781" height="590" alt="image" src="https://github.com/user-attachments/assets/234da547-2eb3-495a-8ef2-ff5e7d3e5cac" />
+
   ## cấu hình ssl
   
   - do Trong database WordPress còn lưu:
