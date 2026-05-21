@@ -19,12 +19,75 @@
 
 - tạo virtual host file mới, dùng site default đang có
   
-  <img width="1124" height="49" alt="image" src="https://github.com/user-attachments/assets/002c8fec-1d7a-42ba-b409-070e440204b5" />
+<img width="1124" height="49" alt="image" src="https://github.com/user-attachments/assets/002c8fec-1d7a-42ba-b409-070e440204b5" />
 
-  <img width="1016" height="656" alt="image" src="https://github.com/user-attachments/assets/906b091a-0a85-4f44-bff7-0b834a173b90" />
+<img width="1016" height="656" alt="image" src="https://github.com/user-attachments/assets/906b091a-0a85-4f44-bff7-0b834a173b90" />
+  
+- imporrt source code
+
+<img width="1535" height="178" alt="image" src="https://github.com/user-attachments/assets/0d266633-c9ee-4a50-b369-98bddfbf1d74" />
+
+- vhost cho wordpress
+  
+<img width="1330" height="662" alt="image" src="https://github.com/user-attachments/assets/58ad2d0d-0a3f-43fa-9166-f4359f686f5a" />
+
+ - vhost cho lavarel
+   
+<img width="1117" height="484" alt="image" src="https://github.com/user-attachments/assets/94793a11-914c-49da-a74a-773dcc7e81e3" />
+
 - check port
 
   <img width="939" height="237" alt="image" src="https://github.com/user-attachments/assets/7c0c3346-45ef-49a9-bbfd-df066b02ae50" />
-  ## step 2 — Cấu hình Apache để sử dụng mod_fastcgi
+  ## step 2 — Cấu hình NGINX
+  - TẠO DEFAULT VHOST ĐỂ CHUYỂN HƯỚNG CÁC REQUESST KO HỢP LỆ
+ 
+<img width="1094" height="737" alt="image" src="https://github.com/user-attachments/assets/8f427127-c828-46a8-895a-c51775a18cda" />
+  - tạo vhost cho lavarel nginx
+
+<img width="1346" height="698" alt="image" src="https://github.com/user-attachments/assets/01b0c479-77a2-4b7a-a5f8-a96c9779b96f" />
+
+  - tạo vhost wordpress nginx
+
+<img width="1041" height="791" alt="image" src="https://github.com/user-attachments/assets/28fe8f64-ba71-4272-aa90-f263adda2262" />
+  ## cấu hình ssl
+  
+  - do Trong database WordPress còn lưu:
+
+siteurl = https://linhlt.id.vn
+home    = https://linhlt.id.vn
+  nên khi vào wp.caolong.vietnix.tech sẽ tự redirect sang linhlt.id.nv
+
+- fix bằng cách vào databse để đổi sag domain khác
+
+<img width="897" height="338" alt="image" src="https://github.com/user-attachments/assets/0a2a2768-3776-49e1-9657-51d4dcb0ab9f" />
+- hoặc dùng wp-cli để migrate toàn bộ
+
+<img width="1058" height="468" alt="image" src="https://github.com/user-attachments/assets/da600f7a-04ed-4ff0-914f-2b1880edeb0c" />
+
+## KẾT QUẢ DÙNG VHOST
+<img width="1767" height="1000" alt="image" src="https://github.com/user-attachments/assets/bf2ea17d-bb41-4bab-80bb-5d36bd908c52" />
+
+<img width="1849" height="1019" alt="image" src="https://github.com/user-attachments/assets/d089f317-40d2-4a13-bcac-f14b028a94f6" />
+
+- check reverse proxy
+  
+  <img width="1857" height="130" alt="image" src="https://github.com/user-attachments/assets/193bca56-d5b7-4052-8a27-d21fa42600a5" />
+
+
+- Bất kỳ domain nào khác khi trỏ về IP VPS hoặc truy cập qua IP phải cần qua 1
+default vhost.
+
+<img width="719" height="405" alt="image" src="https://github.com/user-attachments/assets/c57f80d1-af47-4e8d-b1a0-9de31b62fda6" />
+
+- cho site chạy 2 giao thức http và https
 
   
+<img width="1165" height="309" alt="image" src="https://github.com/user-attachments/assets/9d6dd63f-a311-4297-a277-791e56e0688a" />
+
+- check và kết quả đề trả về 200 khi truy cập http
+  
+<img width="653" height="266" alt="image" src="https://github.com/user-attachments/assets/205be7c6-4555-4ce1-85b1-c7e679bd11ab" />
+
+
+<img width="987" height="303" alt="image" src="https://github.com/user-attachments/assets/36a203d7-eb08-4539-8086-fec7f90584ed" />
+
