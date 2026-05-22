@@ -107,13 +107,21 @@ giảm overhead TCP/TLS handshake
 tăng throughput backend
 cải thiện performance reverse proxy
 
+<img width="420" height="347" alt="image" src="https://github.com/user-attachments/assets/7c56d421-45d1-4187-a061-e3a2bfbc4a42" />
+
 ## Buffering
 
 - phần này nginx sẽ giữ toàn bộ response của apache trong 1 lần để đóng kết nối sớm cho apache, ví dụ user mạng yếu và tải tài nguyên lâu, nêu k buffer thì connect giưa nginx và apache sẽ tồn tại lâu gây Apache worker bị giữ. Và k thể phục vụ các request khác
 
+  <img width="622" height="102" alt="image" src="https://github.com/user-attachments/assets/38432d05-cc2b-4a4e-b44c-929855094caf" />
+
+
 ## proxy_read_timeout 60s;
 
-- giới hạn thời gian response để trách bị treo 
+- giới hạn thời gian response để trách bị treo
+
+  <img width="456" height="98" alt="image" src="https://github.com/user-attachments/assets/3adeed79-975a-4dd0-b129-2dfea6cfa5a7" />
+
 
 # proxy_http_version 1.1
 
@@ -121,6 +129,9 @@ cải thiện performance reverse proxy
 - giảm TCP handshake
 - giảm latency
 - backend performance tốt hơn.
+  
+  <img width="646" height="294" alt="image" src="https://github.com/user-attachments/assets/d4e535e7-ca86-4cd3-ada5-ed401b9e36fc" />
+
   
 # proxy_set_header Host $host;
 
@@ -143,6 +154,14 @@ cải thiện performance reverse proxy
  ## X-Forwarded-Proto
 
 - dùng để phân biệt http và https
+
+  <img width="744" height="150" alt="image" src="https://github.com/user-attachments/assets/81c70d15-1b94-4412-bb67-bf33d67aae00" />
+
+## xử lí static file
+
+- các file tĩnh sẽ dc nginx xử lí luôn và response cho user chứ ko chuyển qua apache để giảm tải cho apache
+- 
+<img width="1066" height="318" alt="image" src="https://github.com/user-attachments/assets/aa701e78-d4a7-4473-a7aa-be0c29df2197" />
 
   
  
