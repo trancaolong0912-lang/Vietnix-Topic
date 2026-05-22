@@ -85,3 +85,8 @@ B3: Restore database
 # đổi lại vesion để tranh xung đột plugin wordpress với version của php
 
 <img width="1534" height="948" alt="image" src="https://github.com/user-attachments/assets/97a9eb8c-336a-452c-bf70-c8f3184d6e66" />
+
+## KẾT QUẢ
+
+  <img width="1784" height="995" alt="image" src="https://github.com/user-attachments/assets/2ba1d3fa-2e7c-4519-b9a4-b0a21064e13d" />
+<img width="1832" height="886" alt="image" src="https://github.com/user-attachments/assets/864e7805-1120-44d7-9262-59e1a7d70200" />
