@@ -81,3 +81,7 @@ B3: Restore database
 # đổi lại tên và infor trong .env của laravel
 
 <img width="957" height="962" alt="image" src="https://github.com/user-attachments/assets/cc84283f-726a-4c7d-9fdc-148ebf1fc54d" />
+
+# đổi lại vesion để tranh xung đột plugin wordpress với version của php
+
+<img width="1534" height="948" alt="image" src="https://github.com/user-attachments/assets/97a9eb8c-336a-452c-bf70-c8f3184d6e66" />
