@@ -1,1 +1,73 @@
 
+## các phần tối ưu cho reverse proxy
+
+# keepalive 32
+
+-tạo sẵn 32 connection, do mỗi lần nginx gửi 1 request cho apapche đều phải thực hiện handshake đóng và mở sesion nên làm vậy sẽ tốn tài nguyên, nếu để sẵn vài TCP connection thì có thể tái sử dụng để k cần tạo các bước handshake mới
+
+Việc tái sử dụng connection giúp:
+
+giảm latency
+giảm overhead TCP/TLS handshake
+tăng throughput backend
+cải thiện performance reverse proxy
+
+<img width="420" height="347" alt="image" src="https://github.com/user-attachments/assets/7c56d421-45d1-4187-a061-e3a2bfbc4a42" />
+
+## Buffering
+
+- phần này nginx sẽ giữ toàn bộ response của apache trong 1 lần để đóng kết nối sớm cho apache, ví dụ user mạng yếu và tải tài nguyên lâu, nêu k buffer thì connect giưa nginx và apache sẽ tồn tại lâu gây Apache worker bị giữ. Và k thể phục vụ các request khác
+
+  <img width="622" height="102" alt="image" src="https://github.com/user-attachments/assets/38432d05-cc2b-4a4e-b44c-929855094caf" />
+
+
+## proxy_read_timeout 60s;
+
+- giới hạn thời gian response để trách bị treo
+
+  <img width="456" height="98" alt="image" src="https://github.com/user-attachments/assets/3adeed79-975a-4dd0-b129-2dfea6cfa5a7" />
+
+
+# proxy_http_version 1.1
+
+- reuse connection
+- giảm TCP handshake
+- giảm latency
+- backend performance tốt hơn.
+  
+  <img width="646" height="294" alt="image" src="https://github.com/user-attachments/assets/d4e535e7-ca86-4cd3-ada5-ed401b9e36fc" />
+
+  
+# proxy_set_header Host $host;
+
+-HẬU QUẢ KHI KO SET proxy_set_header Host $host;
+- Redirect sai: nếu k set proxy_set_header Host $host; thì nginx sẽ mặc định gửi 172.0.0.1 cho wordpress mà k phải site wp.caolong.vietnix.tech như đã set domain, như vạy thì khi wordpress response sẽ gửi về 172.0.0.1 chứ ko phải wp.caolong.vietnix.tech 
+  
+- ko lưu cookie: khi cookie bị giao nhầm cho 172.0.0.1 thì site chính sẽ ko lưu thông tin gì nên khi login rồi nhưng sẽ bị logout ra - > fail session
+
+- Mixed Content: khi page đang dc load là https nhưng backend response 127.0.0.1 do thiếu trường proxy_set_header Host $host thì browser sẽ chặn ngay session đó do mismatch content , có thể gây crash css , mất js, vỡ giao diện
+
+  # proxy_set_header X-Real-IP $remote_addr;
+
+  - phần này cho backend thấy dc ip thật của user khi request tới, có thể ghi log lại chính xác cho việc phân tích thông tin requesst của user và nếu ko set trường này thì khó trong việc rate limit, seccurity audit, GeoIP vì backend chỉ nhận dc 127.0.0.1.
+    
+  # proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+  
+ dùng để Lưu chain IP proxy.
+-Nếu dùng: Cloudflare, Load balancer ,CDN thì backend không sẽ trace được origin IP. 
+
+ ## X-Forwarded-Proto
+
+- dùng để phân biệt http và https
+
+  <img width="744" height="150" alt="image" src="https://github.com/user-attachments/assets/81c70d15-1b94-4412-bb67-bf33d67aae00" />
+
+## xử lí static file
+
+- các file tĩnh sẽ dc nginx xử lí luôn và response cho user chứ ko chuyển qua apache để giảm tải cho apache
+  
+<img width="1066" height="318" alt="image" src="https://github.com/user-attachments/assets/aa701e78-d4a7-4473-a7aa-be0c29df2197" />
+
+
+
+<img width="618" height="175" alt="image" src="https://github.com/user-attachments/assets/80d50f0a-b270-48e4-8470-ad9a3f3673e5" />
