@@ -54,7 +54,7 @@ cải thiện performance reverse proxy
   # proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
   
  dùng để Lưu chain IP proxy.
--Nếu dùng: Cloudflare, Load balancer ,CDN thì backend không sẽ trace được origin IP. 
+-Nếu dùng: Cloudflare, Load balancer ,CDN thì backend không sẽ trace được origin IP nếu chưa set $proxy_add_x_forwarded_for;
 
  ## X-Forwarded-Proto
 
