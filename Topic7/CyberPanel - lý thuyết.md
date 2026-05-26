@@ -26,3 +26,22 @@
 * Có sẵn Lightweight DNS Server, Email Server (Rainloop Webmail), giao diện Command Line, FirewallD, SpamAssassin, ModSecurity,…
 * Hỗ trợ cài đặt WordPress, Drupal, Magento,… trong một click chuột.
 * Hỗ trợ Git (Github, Gitlab).
+
+# ưu và nhược điểm
+
+### Ưu điểm của CyberPanel
+
+### Bảng so sánh Ưu nhược điểm của CyberPanel
+
+| **Ưu điểm** | **Nhược điểm** |
+|-------------|----------------|
+| **Miễn phí**: CyberPanel không yêu cầu phí bản quyền, giúp người dùng giảm thiểu chi phí đầu tư. | **Hạn chế cài đặt phần mềm**: Chỉ có thể cài đặt phần mềm tương thích với CyberPanel và hệ điều hành Linux. |
+| **Tối ưu hiệu suất**: Nhờ tích hợp OpenLiteSpeed, website tải trang nhanh chóng và hoạt động mượt mà. | **Khó chuyển đổi**: Tính năng tùy chỉnh trên CyberPanel khó chuyển sang nhà cung cấp khác. |
+| **Dễ sử dụng**: Giao diện trực quan, dễ thao tác ngay cả với người mới. | **Hỗ trợ kỹ thuật chưa tốt**: Một số người dùng gặp khó khăn khi cài đặt và liên hệ hỗ trợ. |
+| **Nhiều chức năng**: Quản lý đầy đủ website, database, email, DNS… | **Giao diện còn phức tạp**: Quá nhiều tùy chọn, gây khó khăn cho người dùng mới bắt đầu. |
+| **Bảo mật cao**: Tích hợp tường lửa, quét malware và SSL tự động. | |
+| **Cộng đồng hỗ trợ đông đảo**: Dễ tìm kiếm sự giúp đỡ từ cộng đồng. | |
+| **Dễ dàng cài đặt**: Cài nhanh, có File Manager tích hợp sẵn. | |
+| **Ít lỗi hơn**: Thường xuyên được cập nhật và vá lỗi. | |
+| **Hỗ trợ kỹ thuật từ nhà cung cấp**: Một số VPS/hosting hỗ trợ tối ưu cho CyberPanel. | |
+| **Quản lý file dễ dàng**: Tích hợp File Manager ngay trong giao diện. | |
