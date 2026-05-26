@@ -143,6 +143,9 @@ Sau đó bạn kéo xuống mục Configuration, chọn vHost Conf và thêm hai
 
 <img width="1302" height="725" alt="image" src="https://github.com/user-attachments/assets/2661fb9d-c5ab-4031-a998-9988c8fd24fe" />
 
+<img width="1685" height="961" alt="image" src="https://github.com/user-attachments/assets/e623a602-7c62-45f9-a89a-2c738bd8d630" />
+
+
 ## KẾT QUẢ
 
 ## LARAVEL:
