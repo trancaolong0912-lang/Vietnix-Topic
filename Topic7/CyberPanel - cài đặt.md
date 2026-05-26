@@ -1,4 +1,4 @@
-<img width="874" height="285" alt="image" src="https://github.com/user-attachments/assets/90ace9fb-2dde-4ed9-91b1-686fe65c2a33" /># Chuẩn bị môi trường cài đặt CyberPanel
+# Chuẩn bị môi trường cài đặt CyberPanel
 
 - B1: SSH vào VPS
   
@@ -85,7 +85,7 @@ wordpress:
 
 <img width="965" height="509" alt="image" src="https://github.com/user-attachments/assets/560553c2-2f05-436b-842d-063840a1904b" />
 
-## Tạo ứng dụng chạy ở port 5000
+## 2. Tạo ứng dụng chạy ở port 5000
 
 - B1: Cài python và flask
 apt install python3 python3-pip -y
@@ -102,5 +102,54 @@ pip3 install flask
 
 <img width="1356" height="823" alt="image" src="https://github.com/user-attachments/assets/cbd247c0-fb0f-478d-9488-e5e9be7ee0f1" />
 
-##  Cấu hình ProxyPass trong OpenLiteSpeed để khi người dùng truy cập vào domain/api, kết quả sẽ được chuyển tiếp (proxy) từ ứng dụng chạy ở port 5000.
+##  3. Cấu hình ProxyPass trong OpenLiteSpeed để khi người dùng truy cập vào domain/api, kết quả sẽ được chuyển tiếp (proxy) từ ứng dụng chạy ở port 5000.
+
+- B1: TẠO USER
+<img width="915" height="328" alt="image" src="https://github.com/user-attachments/assets/6cb43d15-e385-47de-8e41-e9d19156cdcd" />
+
+- B2: ĐĂNG NHẬP VÀO OpenLiteSpeed
+
+  <img width="1829" height="972" alt="image" src="https://github.com/user-attachments/assets/92a712f0-490a-430e-9068-ddac792f26e7" />
+
+
+- Bước 3: Tạo proxy (External App)
+
+<img width="1829" height="581" alt="image" src="https://github.com/user-attachments/assets/eca86f0e-071d-47fa-9f6c-2096f18f52cf" />
+
+- Bước 4: Tại mục Type, bạn chọn Web Server và nhấn dấu mũi tên để chuyển sang bước tiếp theo.
+
+<img width="1529" height="642" alt="image" src="https://github.com/user-attachments/assets/7c9282fa-5f00-4e71-98b5-3f04e39c9a50" />
+
+Cuối cùng, điền đầy đủ các thông tin cần thiết cho proxy và nhấn Save:
+
+- Name: Tên gọi cho proxy.
+- Address: Địa chỉ IP của ứng dụng backend.
+- Max Connections: Số lượng kết nối tối đa.
+- Initial Request Timeout (sec): Thời gian chờ yêu cầu ban đầu (ví dụ: 60 giây).
+- Retry Timeout (secs): Thời gian chờ thử lại (thường là 0 giây).
+- Response Buffering: Chọn No.
+
+<img width="1815" height="1002" alt="image" src="https://github.com/user-attachments/assets/27ba1e18-c491-4e3b-90dc-c22ea4169f7f" />
+
+- Bước 5: Cấu hình Proxy vào website
+
+Sau khi đã tạo proxy, bạn cần cấu hình website trên CyberPanel để chuyển hướng các yêu cầu đến proxy này. Bạn quay lại trang quản lý của CyberPanel và chọn Websites, sau đó chọn List Websites. Nhấn vào nút Manage tại website mà bạn muốn cấu hình proxy.
+
+Sau đó bạn kéo xuống mục Configuration, chọn vHost Conf và thêm hai dòng sau vào cuối hàm rewrite có tham số enable là 1 (thường là trong file .htaccess ảo của vHost):
+
+<img width="1520" height="738" alt="image" src="https://github.com/user-attachments/assets/8acd1a4e-3f28-4459-b0c5-f157e0fb4b23" />
+
+<img width="1495" height="438" alt="image" src="https://github.com/user-attachments/assets/af1dec9a-4159-4a78-9600-8c079e9f574d" />
+
+<img width="1302" height="725" alt="image" src="https://github.com/user-attachments/assets/2661fb9d-c5ab-4031-a998-9988c8fd24fe" />
+
+## KẾT QUẢ
+
+## LARAVEL:
+
+<img width="1206" height="638" alt="image" src="https://github.com/user-attachments/assets/1112fa30-75e4-4087-ad5d-051e0266dfc8" />
+
+## WORDPRESS
+
+<img width="1531" height="700" alt="image" src="https://github.com/user-attachments/assets/5ca8eafe-ac02-4c14-b116-97e2d3dc1221" />
 
