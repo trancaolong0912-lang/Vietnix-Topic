@@ -56,30 +56,68 @@ cd php-8.1.32
 make -j$(nproc)
 make install
 
-## SET UP PHP8.1
+# SET UP PHP 8.1
 
 ## Kiểm tra PHP 8.1
+
+```bash
 /usr/local/php81/bin/php -v
+```
+
+---
 
 ## Tạo symlink để dùng lệnh php8.1
+
+```bash
 ln -s /usr/local/php81/bin/php /usr/local/bin/php8.1
 ln -s /usr/local/php81/sbin/php-fpm /usr/local/bin/php-fpm8.1
+```
+
+---
 
 ## Cấu hình PHP-FPM
-cp /usr/local/php81/etc/php-fpm.conf.default /usr/local/php81/etc/php-fpm.conf
-cp /usr/local/php81/etc/php-fpm.d/www.conf.default /usr/local/php81/etc/php-fpm.d/www.conf
 
-## Sửa config PHP-FPM để dùng unix socket
-sed -i 's|listen = 127.0.0.1:9000|listen = /run/php/php8.1-fpm.sock|' /usr/local/php81/etc/php-fpm.d/www.conf
-sed -i 's|;listen.owner = nobody|listen.owner = www-data|' /usr/local/php81/etc/php-fpm.d/www.conf
-sed -i 's|;listen.group = nobody|listen.group = www-data|' /usr/local/php81/etc/php-fpm.d/www.conf
-sed -i 's|user = nobody|user = www-data|' /usr/local/php81/etc/php-fpm.d/www.conf
-sed -i 's|group = nobody|group = www-data|' /usr/local/php81/etc/php-fpm.d/www.conf
+```bash
+cp /usr/local/php81/etc/php-fpm.conf.default /usr/local/php81/etc/php-fpm.conf
+
+cp /usr/local/php81/etc/php-fpm.d/www.conf.default \
+/usr/local/php81/etc/php-fpm.d/www.conf
+```
+
+---
+
+## Sửa config PHP-FPM để dùng Unix Socket
+
+```bash
+sed -i 's|listen = 127.0.0.1:9000|listen = /run/php/php8.1-fpm.sock|' \
+/usr/local/php81/etc/php-fpm.d/www.conf
+
+sed -i 's|;listen.owner = nobody|listen.owner = www-data|' \
+/usr/local/php81/etc/php-fpm.d/www.conf
+
+sed -i 's|;listen.group = nobody|listen.group = www-data|' \
+/usr/local/php81/etc/php-fpm.d/www.conf
+
+sed -i 's|user = nobody|user = www-data|' \
+/usr/local/php81/etc/php-fpm.d/www.conf
+
+sed -i 's|group = nobody|group = www-data|' \
+/usr/local/php81/etc/php-fpm.d/www.conf
+```
+
+---
 
 ## Tạo thư mục socket
+
+```bash
 mkdir -p /run/php
+```
+
+---
 
 ## Tạo systemd service
+
+```bash
 cat > /etc/systemd/system/php8.1-fpm.service << 'EOF'
 [Unit]
 Description=PHP 8.1 FastCGI Process Manager
@@ -88,20 +126,51 @@ After=network.target
 [Service]
 Type=simple
 PIDFile=/run/php/php8.1-fpm.pid
-ExecStart=/usr/local/php81/sbin/php-fpm --nodaemonize --fpm-config /usr/local/php81/etc/php-fpm.conf
+ExecStart=/usr/local/php81/sbin/php-fpm \
+--nodaemonize \
+--fpm-config /usr/local/php81/etc/php-fpm.conf
+
 ExecReload=/bin/kill -USR2 $MAINPID
 Restart=on-failure
 
 [Install]
 WantedBy=multi-user.target
 EOF
+```
+
+---
+<img width="1287" height="341" alt="image" src="https://github.com/user-attachments/assets/8ea2f54f-cd07-4aa3-9b46-77d17a35e889" />
 
 ## Start PHP-FPM 8.1
+
+```bash
 systemctl daemon-reload
 systemctl start php8.1-fpm
 systemctl enable php8.1-fpm
 systemctl status php8.1-fpm
-<img width="1401" height="317" alt="image" src="https://github.com/user-attachments/assets/a3c07bf2-7670-4233-8729-753b9779dafc" />
+```
+
+---
+
+## Kiểm tra socket PHP-FPM
+
+```bash
+ls -lah /run/php/
+```
+
+Kết quả mong muốn:
+
+```text
+php8.1-fpm.sock
+```
+
+---
+
+## Kiểm tra process PHP-FPM
+
+```bash
+ps aux | grep php-fpm
+```
 
 # Kích hoạt PHP-FPM 8.1
 
