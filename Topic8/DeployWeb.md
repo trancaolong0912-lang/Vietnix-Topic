@@ -127,3 +127,6 @@ cp /etc/letsencrypt/live/wp.caolong.vietnix.tech/chain.pem \
 
 <img width="1842" height="684" alt="image" src="https://github.com/user-attachments/assets/1fc39015-7808-41c8-b477-f6c7e57d0f7c" />
 
+<img width="1829" height="1007" alt="image" src="https://github.com/user-attachments/assets/c5c74fff-c9ed-4afe-8b27-33f2f962e198" />
+<img width="1844" height="1034" alt="image" src="https://github.com/user-attachments/assets/7cf12537-7ccd-409b-ac18-9bffeb403486" />
+
