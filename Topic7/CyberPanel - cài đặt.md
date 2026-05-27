@@ -1,4 +1,4 @@
-# Chuẩn bị môi trường cài đặt CyberPanel
+<img width="1288" height="660" alt="image" src="https://github.com/user-attachments/assets/e1812f7f-3c89-4803-b595-c7c170e8cc44" /># Chuẩn bị môi trường cài đặt CyberPanel
 
 - B1: SSH vào VPS
   
@@ -150,9 +150,9 @@ Sau đó bạn kéo xuống mục Configuration, chọn vHost Conf và thêm hai
 
 ## LARAVEL:
 
-<img width="1206" height="638" alt="image" src="https://github.com/user-attachments/assets/1112fa30-75e4-4087-ad5d-051e0266dfc8" />
+<img width="1129" height="336" alt="image" src="https://github.com/user-attachments/assets/4d8b9df0-803c-45b7-bd6f-524692d2c5de" />
 
 ## WORDPRESS
 
-<img width="1531" height="700" alt="image" src="https://github.com/user-attachments/assets/5ca8eafe-ac02-4c14-b116-97e2d3dc1221" />
+<img width="1288" height="660" alt="image" src="https://github.com/user-attachments/assets/38e7f21a-d0fb-4f8e-8e62-d75f9ea1740a" />
 
