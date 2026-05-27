@@ -101,3 +101,10 @@ systemctl daemon-reload
 systemctl start php8.1-fpm
 systemctl enable php8.1-fpm
 systemctl status php8.1-fpm
+<img width="1401" height="317" alt="image" src="https://github.com/user-attachments/assets/a3c07bf2-7670-4233-8729-753b9779dafc" />
+
+# Kích hoạt PHP-FPM 8.1
+
+
+<img width="1497" height="667" alt="image" src="https://github.com/user-attachments/assets/accc31f1-2633-49c7-a186-ecccf81b5d02" />
+
