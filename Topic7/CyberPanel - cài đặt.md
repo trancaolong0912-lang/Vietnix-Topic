@@ -1,4 +1,3 @@
-<img width="1288" height="660" alt="image" src="https://github.com/user-attachments/assets/e1812f7f-3c89-4803-b595-c7c170e8cc44" /># Chuẩn bị môi trường cài đặt CyberPanel
 
 - B1: SSH vào VPS
   
