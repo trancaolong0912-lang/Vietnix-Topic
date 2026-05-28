@@ -1,4 +1,4 @@
-<img width="805" height="541" alt="image" src="https://github.com/user-attachments/assets/40ba3e75-e44f-45d6-b423-9de0f59a1cbe" />
+<img width="1359" height="704" alt="image" src="https://github.com/user-attachments/assets/ab032527-f2c7-439f-9275-8a189cdea1a8" /><img width="805" height="541" alt="image" src="https://github.com/user-attachments/assets/40ba3e75-e44f-45d6-b423-9de0f59a1cbe" />
 # allow port, allow ip trên window fw
 ## check trạng thái từ máy client
 
@@ -258,3 +258,56 @@ extension=curl
 
 <img width="1224" height="420" alt="image" src="https://github.com/user-attachments/assets/06ccf750-547a-43d8-b641-8c8a743d0f04" />
 
+<img width="783" height="594" alt="image" src="https://github.com/user-attachments/assets/f3cfb153-a399-4677-8fc4-2b9867c3a667" />
+
+<img width="625" height="497" alt="image" src="https://github.com/user-attachments/assets/183d1090-99d5-4508-8a2e-5574eb555794" />
+
+<img width="1605" height="778" alt="image" src="https://github.com/user-attachments/assets/c86bd3c6-cd23-4097-bd6f-31915aea1345" />
+
+<img width="1777" height="802" alt="image" src="https://github.com/user-attachments/assets/2286056f-0de9-4391-9720-123a8c87daf6" />
+
+cài thêm mysql
+- hoàn tất cài đặt
+
+<img width="830" height="617" alt="image" src="https://github.com/user-attachments/assets/31356e95-d5eb-43c0-a24c-1d40bbcef571" />
+
+- B3: Cài đặt WordPress trên IIS
+
+  <img width="1757" height="878" alt="image" src="https://github.com/user-attachments/assets/931ace26-7a46-44e8-8aae-8c0ac76b9e04" />
+
+- B4: Move tới C:\inetpub\wwwroot\wordpress
+  <img width="1204" height="677" alt="image" src="https://github.com/user-attachments/assets/e646d20f-6f9d-429b-a609-efa7425fd8a0" />
+
+- B5: Cấu hình IIS cho WordPress
+
+  <img width="1681" height="955" alt="image" src="https://github.com/user-attachments/assets/8871fe44-5023-44f4-a685-7a9af18158cf" />
+
+- B6: Cài URL Rewrite module
+
+  <img width="899" height="78" alt="image" src="https://github.com/user-attachments/assets/49e381ad-487f-418f-80f8-718684df719e" />
+
+- B7: EDIT wordpress.conf
+
+   <img width="1359" height="704" alt="image" src="https://github.com/user-attachments/assets/bf3e3be7-b5f1-4476-875c-31fc6af605ea" />
+
+<img width="1632" height="843" alt="image" src="https://github.com/user-attachments/assets/005bfc16-c5cf-48cb-b127-b9970e085ed8" />
+
+<img width="1440" height="888" alt="image" src="https://github.com/user-attachments/assets/cb58e5ce-c404-4976-9607-26953bc4fb40" />
+
+<img width="1758" height="974" alt="image" src="https://github.com/user-attachments/assets/197ece8a-c227-4ec4-88be-032856f88ff4" />
+
+cài ssl
+
+<img width="1622" height="927" alt="image" src="https://github.com/user-attachments/assets/4af7cafb-177c-4c13-93bc-ebff48dfa64e" />
+
+<img width="1665" height="806" alt="image" src="https://github.com/user-attachments/assets/c5233b96-62c4-40ee-8765-1a9e711bbf6b" />
+
+
+<img width="1621" height="901" alt="image" src="https://github.com/user-attachments/assets/3698bbc4-fd4f-4fdb-ad5c-c25ce74bda05" />
+
+<img width="701" height="397" alt="image" src="https://github.com/user-attachments/assets/eddf5d95-55af-45ae-8060-8e6e5ca57470" />
+
+
+<img width="686" height="236" alt="image" src="https://github.com/user-attachments/assets/30b6a192-dda2-4940-afca-9975a75c4204" />
+
+<img width="1819" height="933" alt="image" src="https://github.com/user-attachments/assets/b427ac93-233f-4831-a923-40cd8cc1af52" />
