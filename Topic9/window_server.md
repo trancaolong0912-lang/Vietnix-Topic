@@ -1,4 +1,4 @@
-
+<img width="805" height="541" alt="image" src="https://github.com/user-attachments/assets/40ba3e75-e44f-45d6-b423-9de0f59a1cbe" />
 # allow port, allow ip trên window fw
 ## check trạng thái từ máy client
 
@@ -168,4 +168,93 @@ New-NetFirewallRule `
 <img width="468" height="602" alt="image" src="https://github.com/user-attachments/assets/c5d6a942-8776-456d-920c-0edcd4c3821f" />
 
 <img width="465" height="567" alt="image" src="https://github.com/user-attachments/assets/761443fe-3851-40a2-bd05-3abc45d6c3cc" />
+
+
+
+
+# Thực hành cài đặt
+- Webserver IIS, trên Webserver IIS+ Cài đặt website wordpress mặc định+ Cài đặt SSL
+
+- Bước 1: Mở Server Manager
+Manage → Add Roles and Features → Next
+
+<img width="1442" height="943" alt="image" src="https://github.com/user-attachments/assets/470e8567-039f-416b-b7b6-c00552b1d497" />
+
+- Bước 2: Add Roles and Features
+Manage → Add Roles and Features → Next
+
+<img width="785" height="545" alt="image" src="https://github.com/user-attachments/assets/8c395297-ee73-491d-acd1-a0cb7f6429f4" />
+
+- Bước 3: Chọn Installation Type
+Role-based or feature-based installation → Next
+
+<img width="766" height="553" alt="image" src="https://github.com/user-attachments/assets/44285e21-a10a-4537-acd1-fa85bae59f8c" />
+
+Bước 4: Chọn Server
+Select a server from the server pool → chọn server hiện tại → Next
+
+
+<img width="805" height="541" alt="image" src="https://github.com/user-attachments/assets/a946fd53-e8b7-46cf-ac23-a05d532cd99a" />
+
+Bước 5: Chọn Role và install
+<img width="807" height="538" alt="image" src="https://github.com/user-attachments/assets/15ebb204-8076-4db4-88e4-5876b7fc66ee" />
+
+<img width="924" height="614" alt="image" src="https://github.com/user-attachments/assets/500da1de-c9fe-4f8a-b104-95986be79912" />
+
+<img width="685" height="509" alt="image" src="https://github.com/user-attachments/assets/968f9157-738d-4967-9c15-593a197752d6" />
+
+<img width="777" height="589" alt="image" src="https://github.com/user-attachments/assets/2350e517-fad9-4857-b010-04abf491f7ec" />
+
+- hoàn tất cài
+
+<img width="798" height="563" alt="image" src="https://github.com/user-attachments/assets/dd5ed4d2-8183-4bbf-a511-a951fa983093" />
+
+# Phần 2: cài đặt PHP 8.1
+
+```
+https://windows.php.net/download/
+→ PHP 8.x Non-Thread Safe x64
+→ Giải nén vào C:\PHP
+```
+  <img width="1353" height="901" alt="image" src="https://github.com/user-attachments/assets/0880a0dd-a023-4631-a45c-3e9a8e1cca68" />
+
+-   sửa tên file  ```php.ini-production``` và đổi tên thành ```php.ini``` Cấu hình php.ini
+-   
+<img width="942" height="392" alt="image" src="https://github.com/user-attachments/assets/5efd66dc-844c-413b-80fd-a94dac7b58bc" />
+
+- edit file php.ini và bỏ dấu ";" các dòng sau
+extension=mysqli
+extension=gd
+extension=mbstring
+extension=openssl
+extension=curl
+<img width="985" height="679" alt="image" src="https://github.com/user-attachments/assets/d48c8ac0-8774-4f7c-b4f1-16e2109081de" />
+## Kết nối PHP với IIS 
+- thêm PHP vào PATH
+
+  <img width="1816" height="956" alt="image" src="https://github.com/user-attachments/assets/c6f2e062-43a3-4e56-b08c-fae11f8ed839" />
+
+ <img width="791" height="214" alt="image" src="https://github.com/user-attachments/assets/f0d294c7-458c-406b-ab40-cc04b67a82ea" />
+
+# đăng kí PHP vào IIS
+-  B1:Mở IIS Manager (Internet Information Services).
+  
+<img width="1621" height="809" alt="image" src="https://github.com/user-attachments/assets/d05a2aba-f06c-4a21-aa40-6c05226d1f67" />
+
+- B2: ADD MODULE MAPPING
+
+<img width="1611" height="767" alt="image" src="https://github.com/user-attachments/assets/c0520346-6352-4fa2-8cd5-85e39654d19c" />
+
+<img width="1534" height="671" alt="image" src="https://github.com/user-attachments/assets/e7eda1df-9ed7-4680-b219-9979405d85ee" />
+
+
+  # PHẦN 3: CÀI MYSQL
+
+- B1: MOUNT FILE MSSQL.ISO
+
+<img width="832" height="507" alt="image" src="https://github.com/user-attachments/assets/2cdcfc46-19b5-4a3f-b64e-2c9eb37aa11f" />
+
+- B2: CHẠY  SETUP
+
+<img width="1224" height="420" alt="image" src="https://github.com/user-attachments/assets/06ccf750-547a-43d8-b641-8c8a743d0f04" />
 
