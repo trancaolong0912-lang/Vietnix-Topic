@@ -1,13 +1,13 @@
 
-## allow port, allow ip trên window fw
-# check trạng thái từ máy client
+# allow port, allow ip trên window fw
+## check trạng thái từ máy client
 
 <img width="1105" height="234" alt="image" src="https://github.com/user-attachments/assets/0f180688-450d-435c-b058-2a932c17d0c9" />
 
 port 80 đã bị fw drop
 
-# 1.tiến hành mở port 80 và chỉ định ip 115.78.5.187 được phép remote vào server
-# allow port
+## 1.tiến hành mở port 80 và chỉ định ip 115.78.5.187 được phép remote vào server
+## allow port
 
 - B1: VÀO Tools - > window fw with advance secuiry
 
@@ -71,6 +71,101 @@ New-NetFirewallRule -DisplayName "Allow RDP from 115.78.5.187" `
   
 <img width="1340" height="739" alt="image" src="https://github.com/user-attachments/assets/8ebf1bb4-7d98-48fd-9765-860e044ad9a6" />
 
+# 2. Thực hiện block port 3389, block ip 171.253.251.124 truy cập RDP trên window fw
+
+# block Port 3389
+
+## trên GUI
+
+<img width="710" height="572" alt="image" src="https://github.com/user-attachments/assets/50640313-a37c-4a43-a55b-909678db41f0" />
+
+---
+
+<img width="719" height="598" alt="image" src="https://github.com/user-attachments/assets/0b262fbf-8eb6-47ef-8b83-d6f620f38717" />
+
+---
+
+<img width="728" height="574" alt="image" src="https://github.com/user-attachments/assets/4be192e3-b6ef-4e87-9d7f-ca306c60ce92" />
 
 
+---
+
+<img width="739" height="558" alt="image" src="https://github.com/user-attachments/assets/22e1ca36-29f4-4829-9602-ff8d5f6b0344" />
+
+## trên CLI
+
+```
+New-NetFirewallRule `
+-DisplayName "BLOCK_RDP_3389" `
+-Direction Inbound `
+-Protocol TCP `
+-LocalPort 3389 `
+-Action Block
+
+```
+# block IP 171.253.251.124 truy cập RDP port 3389
+
+# trên GUI
+<img width="721" height="722" alt="image" src="https://github.com/user-attachments/assets/6012fbe4-83f7-4fa9-b26e-90c0ba31f325" />
+
+---
+
+<img width="728" height="573" alt="image" src="https://github.com/user-attachments/assets/13c29ff6-7319-4527-b034-9200bad6e448" />
+
+
+---
+
+
+<img width="721" height="588" alt="image" src="https://github.com/user-attachments/assets/015f5c37-b90d-4195-bda3-bbacae2b6139" />
+
+
+---
+
+<img width="721" height="560" alt="image" src="https://github.com/user-attachments/assets/f1398ac5-090d-4e9a-b3ec-0f2d4f78aeec" />
+
+---
+
+<img width="697" height="580" alt="image" src="https://github.com/user-attachments/assets/1a721e10-f474-450a-90c5-a2d084723a54" />
+
+# trên CLI
+
+```
+New-NetFirewallRule `
+-DisplayName "BLOCK_IP_192.168.0.19_RDP" `
+-Direction Inbound `
+-Protocol TCP `
+-LocalPort 3389 `
+-RemoteAddress 192.168.0.19 `
+-Action Block
+```
+
+# 3.Thực hiện giới hạn port, giới hạn ip trên window fw chỉ cho phép ip chỉ định truy cập
+
+# Giới hạn port 80 chỉ cho phép 1 IP truy cập, các ip khác sẽ bị chặn
+
+# trện GUI
+<img width="722" height="583" alt="image" src="https://github.com/user-attachments/assets/6a681e4e-aa26-49bf-9a29-cc26e9ad23eb" />
+
+---
+<img width="723" height="576" alt="image" src="https://github.com/user-attachments/assets/15ccd1d7-e657-4804-a86f-fbabe0e06af5" />
+
+<img width="726" height="609" alt="image" src="https://github.com/user-attachments/assets/7b11734a-ddca-40ab-a949-88d3ea448afc" />
+
+---
+
+<img width="1106" height="561" alt="image" src="https://github.com/user-attachments/assets/3db77ef3-54f6-49cb-8620-b1db10a1f7e3" />
+
+--- 
+
+<img width="725" height="588" alt="image" src="https://github.com/user-attachments/assets/e0626517-5ea1-4fb1-bc59-2cce58e517b0" />
+
+---
+
+- Thêm dải ip dc chỉ định
+
+  <img width="674" height="269" alt="image" src="https://github.com/user-attachments/assets/bb55cfcc-9e94-46e8-b7bc-2fe0a6b9f84f" />
+
+<img width="468" height="602" alt="image" src="https://github.com/user-attachments/assets/c5d6a942-8776-456d-920c-0edcd4c3821f" />
+
+<img width="465" height="567" alt="image" src="https://github.com/user-attachments/assets/761443fe-3851-40a2-bd05-3abc45d6c3cc" />
 
